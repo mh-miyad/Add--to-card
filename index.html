@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="stylesheet" href="./dist/style.css" />
+    <title>Add To Cart Your Iphone</title>
+  </head>
+  <body>
+    <header class="mb-20">
+      <div class="container mx-auto">
+        <div
+          href="./public/index.html"
+          class="logo cursor-pointer text-2xl text-indigo-700 inline-block shadow-2xl shadow-black/20 rounded-lg font-semibold p-5"
+        >
+          Phone <span class="text-fuchsia-400">Lagbe</span>
+        </div>
+      </div>
+    </header>
+    <main class="mb-20">
+      <section class="container mx-auto px-10 md:px-0">
+        <div
+          class="flex justify-evenly md:flex-row flex-col space-y-9 md:space-y-0"
+        >
+          <img
+            src="./img/iphone-black.png"
+            id="Iphone-pic"
+            class="h-96 inline-block p-0"
+            alt=""
+          />
+          <div class="card-section sm:ml-10">
+            <h2 class="text-2xl font-bold">
+              Model
+              <p class="font-normal">iPhone 14 Pro</p>
+            </h2>
+
+            <div class="description">
+              <p>Dynamic Island</p>
+              <p>Always-On display</p>
+              <p>
+                ProMotion technology with adaptive refresh rates up to 120Hz HDR
+                display
+              </p>
+              <p>True Tone Wide color (P3)</p>
+
+              <p>Haptic Touch and Fingerprint-resistant oleophobic coating</p>
+              <p>2,000,000:1 contrast ratio (typical)</p>
+            </div>
+            <div class="flex my-4">
+              <button
+                id="color-purple"
+                class="rounded-full border border-gray-500 w-7 h-7 bg-purple-500/90"
+              ></button>
+              <button
+                id="color-gold"
+                class="rounded-full border border-gray-500 w-7 h-7 bg-yellow-600/70 mx-5"
+              ></button>
+              <button
+                id="color-white"
+                class="rounded-full border border-gray-500 w-7 h-7 bg-white/90"
+              ></button>
+            </div>
+            <div
+              class="price-section flex justify-between mb-5 bg-gray-200 p-5"
+            >
+              <p class="text-2xl lg:text-4xl mt-5">Quantity</p>
+
+              <input
+                type="number"
+                name=""
+                min="1"
+                value="1"
+                class="w-16 mt-5"
+                id="quantity"
+              />
+            </div>
+            <div class="version my-5">
+              <button
+                id="128GB"
+                class="border hover:font-semibold border-black px-4 rounded-md py-1"
+              >
+                128GB
+              </button>
+              <button
+                id="256GB"
+                class="border hover:font-semibold border-black px-4 rounded-md py-1 mx-2"
+              >
+                256GB
+              </button>
+              <button
+                id="512GB"
+                class="border hover:font-semibold border-black px-4 rounded-md py-1 mx-2"
+              >
+                512GB
+              </button>
+            </div>
+            <hr class="h-1 bg-black" />
+            <div class="price-section flex justify-between">
+              <p class="text-2xl mt-5 lg:text-5xl">Price</p>
+              <p class="text-2xl mt-5 lg:text-5xl">$<span id="Price"></span></p>
+            </div>
+            <div class="price-section flex justify-between">
+              <p class="mt-5 text-2xl lg:text-4xl">Tax</p>
+              <p class="mt-5 text-2xl lg:text-4xl">5%</p>
+              <p class="mt-5 text-2xl lg:text-4xl">$<span id="Tax"></span></p>
+            </div>
+            <div class="price-section flex justify-between">
+              <p class="mt-5 text-2xl lg:text-4xl">Delivery Charge</p>
+              <p class="mt-5 text-2xl lg:text-4xl">Free</p>
+            </div>
+            <div class="price-section flex justify-around">
+              <label
+                for="gander"
+                class="my-5 text-xl md:text-2xl font-bold text-gray-500"
+              >
+                <input type="radio" name="gander" id="" />
+                Cash On Delivery
+              </label>
+              <label
+                for="gander"
+                class="my-5 text-xl md:text-2xl font-bold text-gray-500"
+              >
+                <input type="radio" name="gander" id="" />
+                ACOD
+              </label>
+            </div>
+
+            <hr class="h-1 bg-black" />
+            <div class="price-section flex justify-between">
+              <p class="text-2xl mt-5 lg:text-5xl">Total Price</p>
+              <p class="text-2xl mt-5 lg:text-5xl">
+                $<span id="totalPrice"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Javascript add Here  -->
+    <script src="../javascript/main.js"></script>
+  </body>
+</html>
